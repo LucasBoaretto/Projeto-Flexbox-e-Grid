@@ -15,6 +15,9 @@ body {
 
 header {
     background-color: var(--dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .nav {
@@ -69,14 +72,90 @@ header {
     display: flex;
     flex-flow: row nowrap;
     background: url('../img/hero-bg.png') center / cover fixed;
+    margin-top: 80px;
 }
 
 .banner>div {
     padding: 40px 20px 20px 20px;
     width: 50%;
-    border: 1px solid red;
 }
 
 .banner img {
     width: 80%;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-green {
+    background-color: #3cca67;
+}
+
+.btn-blue {
+    background-color: #635bff;
+}
+
+.banner-buttons {
+    margin-top: 32px;
+}
+
+.banner p,
+.banner h2 {
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Galeria de imagens */
+
+.card-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 300px;
+    gap: 5px;
+}
+
+.card-gallery article {
+    border: solid 1px red;
+    position: relative;
+}
+
+.card-gallery article h1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff91;
+    font-size: 1.6em;
+}
+
+.card-gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.w-1 {
+    grid-column: span 1;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+.w-4 {
+    grid-column: span 4;
 }
