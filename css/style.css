@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --dark: #343a45
 }
@@ -121,23 +123,49 @@ header {
 }
 
 .card-gallery article {
-    border: solid 1px red;
     position: relative;
+    background-color: var(--dark);
+    text-align: justify;
+    border-radius: 10px;
 }
 
-.card-gallery article h1{
+.card-gallery article h1 {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: #ffffff91;
-    font-size: 1.6em;
+    background-color: #ffffffc9;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card-gallery article:hover h1 {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .card-gallery img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-gallery h2,
+.card-gallery p {
+    color: white;
+    padding: 16px;
+    line-height: 24px;
+}
+
+.card-gallery .text-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--dark);
+    z-index: 1;
 }
 
 .h-1 {
@@ -158,4 +186,86 @@ header {
 
 .w-4 {
     grid-column: span 4;
+}
+
+.card-gallery .btn {
+    background-color: var(--dark);
+    color: white;
+    border: none;
+}
+
+.card-gallery article>div {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card-gallery article:hover>div {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.like-btn:hover {
+    color: red;
+}
+
+.card-gallery article>div a:first-child:hover {
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.card-gallery article:hover img {
+    filter: brightness(50%);
+}
+
+/* seção de serviços */
+.services {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.services-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #F2F1F4;
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -1px -1px inset rgba(0, 0, 0, 0.103);
+}
+
+.service-card h1 {
+    font-size: 1.8em;
+    line-height: 40px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.8em;
+    line-height: 22px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.service-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
 }
