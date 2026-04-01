@@ -18,10 +18,7 @@ body {
 
 header {
     background-color: var(--dark);
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 999;
 }
 
 hr {
@@ -29,10 +26,6 @@ hr {
     width: 95%;
     margin: auto;
     margin: 50px auto;
-}
-
-main{
-    margin-top: 20px;
 }
 
 .nav {
@@ -87,7 +80,6 @@ main{
     display: flex;
     flex-flow: row nowrap;
     background: url('../img/hero-bg.png') center / cover fixed;
-    margin-top: 80px;
 }
 
 .banner>div {

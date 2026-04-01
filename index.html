@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/undraw_stripe_payments_re_chlm.svg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-
+    <input type="checkbox" name="menu-toggle" id="menu-toggle">
     <header>
         <nav class="nav">
             <div class="logo grow1">
@@ -23,6 +24,7 @@
                 </a>
                 <!--<h1>Flexbox Grid</h1>-->
             </div>
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
             <div class="menu grow2">
                 <!-- menu principal -->
                 <ul>
@@ -32,7 +34,7 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
-            <div class="menu grow1">
+            <div class="menu grow1 nav-icon">
                 <!-- menu icons -->
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
@@ -70,7 +72,7 @@
             </div>
         </div>
     </section>
-    
+
     <main>
         <!-- Seção da galeria de imagens -->
         <section>
@@ -150,7 +152,7 @@
                 </article>
             </section>
         </section>
-        
+
         <!-- Seção de serviços -->
         <section class="services">
             <h1>Serviços</h1>
@@ -173,7 +175,7 @@
                 </div>
             </section>
         </section>
-        
+
         <!-- Seção dos depoimentos -->
         <section class="testimony">
             <h1>Depoimentos</h1>
